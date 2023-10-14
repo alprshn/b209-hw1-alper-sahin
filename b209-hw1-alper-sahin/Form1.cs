@@ -122,12 +122,12 @@ namespace b209_hw1_alper_sahin
 
         private void numberZero_Click(object sender, EventArgs e)
         {
-            if (cleanScreen) 
-            { 
+            if (cleanScreen)
+            {
                 calculatorScreen.Text = "";
                 cleanScreen = false;
             }
-                
+
             if (calculatorScreen.Text == "0") calculatorScreen.Text = "";
             calculatorScreen.Text += "0";
         }
@@ -137,6 +137,58 @@ namespace b209_hw1_alper_sahin
             process = '+';
             cleanScreen = true;
             firstNumber = Convert.ToInt32(calculatorScreen.Text);
+        }
+        private void substractionButton_Click(object sender, EventArgs e)
+        {
+            process = '-';
+            cleanScreen = true;
+            firstNumber = Convert.ToInt32(calculatorScreen.Text);
+
+        }
+
+        private void divisionButton_Click(object sender, EventArgs e)
+        {
+            process = '/';
+            cleanScreen = true;
+            firstNumber = Convert.ToInt32(calculatorScreen.Text);
+        }
+
+        private void multiplicationButton_Click(object sender, EventArgs e)
+        {
+            process = '*';
+            cleanScreen = true;
+            firstNumber = Convert.ToInt32(calculatorScreen.Text);
+        }
+
+        private void resultButton_Click(object sender, EventArgs e)
+        {
+            int secondNumber = Convert.ToInt32(calculatorScreen.Text);
+            int result;
+
+            switch (process)
+            {
+                case '+':
+                    result = firstNumber + secondNumber;
+                    break;
+                case '-':
+                    result = firstNumber - secondNumber;
+                    break;
+                case '/':
+                    result = firstNumber / secondNumber;
+                    break;
+                case '*':
+                    result = firstNumber * secondNumber;
+                    break;
+                default:
+                    result = 0; break;
+            }
+
+            calculatorScreen.Text = Convert.ToString(result);
+        }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+            calculatorScreen.Text = "0";
         }
     }
 }

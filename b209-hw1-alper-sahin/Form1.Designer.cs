@@ -145,6 +145,7 @@
             divisionButton.TabIndex = 11;
             divisionButton.Text = "/";
             divisionButton.UseVisualStyleBackColor = true;
+            divisionButton.Click += divisionButton_Click;
             // 
             // substractionButton
             // 
@@ -154,6 +155,7 @@
             substractionButton.TabIndex = 10;
             substractionButton.Text = "-";
             substractionButton.UseVisualStyleBackColor = true;
+            substractionButton.Click += substractionButton_Click;
             // 
             // additionButton
             // 
@@ -173,6 +175,7 @@
             multiplicationButton.TabIndex = 15;
             multiplicationButton.Text = "*";
             multiplicationButton.UseVisualStyleBackColor = true;
+            multiplicationButton.Click += multiplicationButton_Click;
             // 
             // numberZero
             // 
@@ -192,6 +195,7 @@
             resultButton.TabIndex = 13;
             resultButton.Text = "=";
             resultButton.UseVisualStyleBackColor = true;
+            resultButton.Click += resultButton_Click;
             // 
             // deleteButton
             // 
@@ -201,6 +205,7 @@
             deleteButton.TabIndex = 12;
             deleteButton.Text = "C";
             deleteButton.UseVisualStyleBackColor = true;
+            deleteButton.Click += deleteButton_Click;
             // 
             // calculatorScreen
             // 
