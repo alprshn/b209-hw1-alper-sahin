@@ -45,10 +45,13 @@
             resultButton = new Button();
             deleteButton = new Button();
             calculatorScreen = new TextBox();
+            label1 = new Label();
+            label2 = new Label();
             SuspendLayout();
             // 
             // numberOne
             // 
+            numberOne.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             numberOne.Location = new Point(32, 153);
             numberOne.Name = "numberOne";
             numberOne.Size = new Size(75, 54);
@@ -59,6 +62,7 @@
             // 
             // numberThree
             // 
+            numberThree.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             numberThree.Location = new Point(194, 153);
             numberThree.Name = "numberThree";
             numberThree.Size = new Size(75, 54);
@@ -69,6 +73,7 @@
             // 
             // numberTwo
             // 
+            numberTwo.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             numberTwo.Location = new Point(113, 153);
             numberTwo.Name = "numberTwo";
             numberTwo.Size = new Size(75, 54);
@@ -79,6 +84,7 @@
             // 
             // numberFive
             // 
+            numberFive.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             numberFive.Location = new Point(113, 213);
             numberFive.Name = "numberFive";
             numberFive.Size = new Size(75, 54);
@@ -89,6 +95,7 @@
             // 
             // numberSix
             // 
+            numberSix.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             numberSix.Location = new Point(194, 213);
             numberSix.Name = "numberSix";
             numberSix.Size = new Size(75, 54);
@@ -99,6 +106,7 @@
             // 
             // numberFour
             // 
+            numberFour.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             numberFour.Location = new Point(32, 213);
             numberFour.Name = "numberFour";
             numberFour.Size = new Size(75, 54);
@@ -109,6 +117,7 @@
             // 
             // numberEight
             // 
+            numberEight.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             numberEight.Location = new Point(113, 273);
             numberEight.Name = "numberEight";
             numberEight.Size = new Size(75, 54);
@@ -119,6 +128,7 @@
             // 
             // numberNine
             // 
+            numberNine.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             numberNine.Location = new Point(194, 273);
             numberNine.Name = "numberNine";
             numberNine.Size = new Size(75, 54);
@@ -129,6 +139,7 @@
             // 
             // numberSeven
             // 
+            numberSeven.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             numberSeven.Location = new Point(32, 273);
             numberSeven.Name = "numberSeven";
             numberSeven.Size = new Size(75, 54);
@@ -139,6 +150,7 @@
             // 
             // divisionButton
             // 
+            divisionButton.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             divisionButton.Location = new Point(275, 273);
             divisionButton.Name = "divisionButton";
             divisionButton.Size = new Size(75, 54);
@@ -149,6 +161,7 @@
             // 
             // substractionButton
             // 
+            substractionButton.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             substractionButton.Location = new Point(275, 213);
             substractionButton.Name = "substractionButton";
             substractionButton.Size = new Size(75, 54);
@@ -159,6 +172,7 @@
             // 
             // additionButton
             // 
+            additionButton.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             additionButton.Location = new Point(275, 153);
             additionButton.Name = "additionButton";
             additionButton.Size = new Size(75, 54);
@@ -169,16 +183,18 @@
             // 
             // multiplicationButton
             // 
+            multiplicationButton.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             multiplicationButton.Location = new Point(275, 333);
             multiplicationButton.Name = "multiplicationButton";
             multiplicationButton.Size = new Size(75, 54);
             multiplicationButton.TabIndex = 15;
-            multiplicationButton.Text = "*";
+            multiplicationButton.Text = "X";
             multiplicationButton.UseVisualStyleBackColor = true;
             multiplicationButton.Click += multiplicationButton_Click;
             // 
             // numberZero
             // 
+            numberZero.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             numberZero.Location = new Point(113, 333);
             numberZero.Name = "numberZero";
             numberZero.Size = new Size(75, 54);
@@ -189,6 +205,7 @@
             // 
             // resultButton
             // 
+            resultButton.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             resultButton.Location = new Point(194, 333);
             resultButton.Name = "resultButton";
             resultButton.Size = new Size(75, 54);
@@ -199,6 +216,7 @@
             // 
             // deleteButton
             // 
+            deleteButton.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             deleteButton.Location = new Point(32, 333);
             deleteButton.Name = "deleteButton";
             deleteButton.Size = new Size(75, 54);
@@ -209,18 +227,42 @@
             // 
             // calculatorScreen
             // 
+            calculatorScreen.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold, GraphicsUnit.Point);
             calculatorScreen.Location = new Point(32, 92);
-            calculatorScreen.Multiline = true;
             calculatorScreen.Name = "calculatorScreen";
-            calculatorScreen.Size = new Size(318, 55);
+            calculatorScreen.Size = new Size(318, 38);
             calculatorScreen.TabIndex = 20;
             calculatorScreen.Text = "0";
+            calculatorScreen.TextAlign = HorizontalAlignment.Right;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(87, 48);
+            label1.Name = "label1";
+            label1.Size = new Size(220, 16);
+            label1.TabIndex = 21;
+            label1.Text = "Visual Programming Calculator";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(12, 405);
+            label2.Name = "label2";
+            label2.Size = new Size(87, 16);
+            label2.TabIndex = 22;
+            label2.Text = "Alper Sahin";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(385, 432);
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(385, 430);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(calculatorScreen);
             Controls.Add(multiplicationButton);
             Controls.Add(numberZero);
@@ -238,6 +280,7 @@
             Controls.Add(numberTwo);
             Controls.Add(numberThree);
             Controls.Add(numberOne);
+            Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -263,5 +306,7 @@
         private Button resultButton;
         private Button deleteButton;
         private TextBox calculatorScreen;
+        private Label label1;
+        private Label label2;
     }
 }
