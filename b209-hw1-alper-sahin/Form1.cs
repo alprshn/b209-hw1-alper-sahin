@@ -16,5 +16,10 @@ namespace b209_hw1_alper_sahin
         {
 
         }
+
+        private void numberOne_Click(object sender, EventArgs e)
+        {
+            calculatorScreen.Text = "1";
+        }
     }
 }
